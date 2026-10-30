@@ -1,0 +1,13 @@
+pencipta Tim Berners-Lee
+Http (hypertext transfer protocol) adalah protocol lapisan komunikasi yang digunakan untuk mentransfer data seperti teks, foto, video dan dokumen html. antara peramban web(client) ke server web di internet
+
+
+IP 127.0.0.1
+adalah alamat ip standar untuk localhost atau antar muka loopback pada computer
+Fungsi Utama 127.0.0.1:
+komunikasi ke diri sendiri.
+Data yang dikirim ke alamat ini tidak keluar ke jaringan internet, atau perangkat keras lain, melainkan berputar Kembali ke computer sendiri.
+Tetap bisa diakses walaupun tanpa koneksi internet, bahkan tempat yang tidak memiliki akses internet
+
+127.0.0.1	Komputer sendiri
+192.168.1.10	Contoh alamat komputer di jaringan lokal	
