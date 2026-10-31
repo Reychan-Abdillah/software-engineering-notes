@@ -12,6 +12,8 @@ const [result] = await db.execute(
 );
 ```
 
+
+
 Untuk operasi INSERT, elemen pertama yang dikembalikan berisi informasi hasil operasi.
 
 ## 2. result.insertId
