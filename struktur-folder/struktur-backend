@@ -1,0 +1,13 @@
+1. Apa itu config?
+config adalah singkatan dari configuration atau konfigurasi.
+
+Dalam aplikasi backend, konfigurasi merupakan kumpulan pengaturan yang dibutuhkan
+ aplikasi agar bisa berjalan dengan benar.
+
+Contohnya:
+- Pengaturan koneksi database.
+- Pengaturan port server.
+- Pengaturan environment.
+- Pengaturan layanan pihak ketiga, seperti API eksternal.
+- Pengaturan autentikasi, seperti konfigurasi JWT.
+Jadi, folder config biasanya digunakan untuk menyimpan kode yang mengatur bagaimana aplikasi terhubung dan beroperasi dengan layanan atau lingkungan tertentu.

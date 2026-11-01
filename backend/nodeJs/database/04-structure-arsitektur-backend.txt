@@ -1,0 +1,53 @@
+req.method ->
+Digunakan untuk mengetahui HTTP Method yang dikirim client.
+Contohnya:
+- GET — meminta data.
+- POST — mengirim atau membuat data.
+- PUT — memperbarui data.
+- DELETE — menghapus data.
+
+req.url ->
+digunakan untuk mengetahui url/path yang diminta client
+GET http://localhost:3000/products
+req.url tidak mengembalikan keseluruhan url melainkan path /product
+atau path beserta query string jika ada contoh product/1
+
+bagaimana ketika client ingin melakukan aksi pada product/path id random? ->
+gunakan  url parameters
+URL Parameters adalah nilai yang terdapat di dalam bagian path URL dan digunakan untuk mengidentifikasi resource tertentu.  
+kedua itu sangat penting dan berhubungan karena, backend membutuhkan informasi client ingin melakukan apa dan di path apa
+
+
+
+status Code -> 
+Ini penting karena backend tidak cukup hanya mengirim data. 
+Backend juga harus memberi tahu client apakah request berhasil, gagal, atau membutuhkan tindakan lain.
+Contoh status code yang perlu kamu kenali:
+Status	Arti
+200	OK — request berhasil
+201	Created — data berhasil dibuat
+400	Bad Request — request tidak valid
+401	Unauthorized — belum terautentikasi
+403	Forbidden — tidak memiliki izin
+404	Not Found — resource tidak ditemukan
+500	Internal Server Error — terjadi kesalahan server
+
+intinya kenapa harus memberi informasi statusCode adalah memberitahu dan mengatur status keberhasilan/kegagalan dari resonse ke client
+cara gampang penginngat
+2xx success
+3xx pengalihan/redirect
+4xx kesalahan di sisi client
+5xx kesalahan di sisi server
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+res.setHeader() ->
+berfungsi Untuk menyisipkan atau mengatur HTTP Header pada respons yang dikirimkan ke client.
+Penjelasan: Header berisi metadata atau informasi tambahan tentang data yang dikirim oleh server, 
+seperti jenis konten (Content-Type), izin akses (CORS), atau pengaturan cache (Cache-Control). 
+Header berbentuk pasangan key-value (kunci dan nilai).
+
+
+http.createServer() membuat server dan menerima callback untuk menangani request.
+req dan res diberikan Node.js ketika request masuk.
+server.listen() menjalankan server agar bisa menerima koneksi.
